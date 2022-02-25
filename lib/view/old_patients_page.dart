@@ -48,7 +48,7 @@ class OldPatientsScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(10,50,10,10),
+          padding: const EdgeInsets.fromLTRB(10,50,10,25),
           child: Column(
             children: [
               CustomText(text: 'Old Patients :',fontSize: 30,),
