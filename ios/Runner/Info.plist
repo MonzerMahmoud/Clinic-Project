@@ -43,5 +43,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>to choose an avatar</string>
+	<key>NSCameraUsageDescription</key>
+	<string>to take an avatar photo</string>
 </dict>
 </plist>

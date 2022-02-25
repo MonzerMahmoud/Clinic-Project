@@ -1,4 +1,7 @@
+import 'package:clinic_project/constants.dart';
 import 'package:clinic_project/view/form.dart';
+import 'package:clinic_project/view/patients_status_page.dart';
+import 'package:clinic_project/view/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,9 +15,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return  GetMaterialApp(
+      theme:ThemeData(primarySwatch: primaryColor),
       home : Scaffold(
-        body: FormPage(),
+        body: SplashScreen(),
       )
 
     );
