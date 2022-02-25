@@ -4,6 +4,7 @@ import 'package:clinic_project/view/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'form.dart';
+import 'old_patients_page.dart';
 
 class PatientsStatusPage extends StatelessWidget {
   const PatientsStatusPage({Key? key}) : super(key: key);
@@ -34,7 +35,7 @@ class PatientsStatusPage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                CustomButton(onPressed: () {}, text: 'Old Patient'),
+                CustomButton(onPressed: ()=>Get.to(()=>OldPatientsScreen()), text: 'Old Patient'),
               ],
             ),
             SizedBox(height: 1,)
