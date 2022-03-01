@@ -13,7 +13,7 @@ class OldPatientsScreen extends StatelessWidget {
   return Image.memory(base64Decode(base64String));
 }
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {// Here starts the screen
     return
     
      Scaffold(
@@ -51,8 +51,6 @@ class OldPatientsScreen extends StatelessWidget {
                               
                               CustomText(text: controller.patientsModel[index].image,fontSize: 20,color: Colors.white),
                               SizedBox(height: 10,),
-                              
-      
                               ],
                             ),
                           ),

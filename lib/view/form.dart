@@ -22,7 +22,7 @@ class _FormPageState extends State<FormPage> {
   String lll = 'wrong';
   File? images;
 
-  Future pickImage() async {
+  Future pickImage() async {// Function to pick image from gallery
     try {
       final images = await ImagePicker().pickImage(source: ImageSource.gallery);
       if (images == null) return;
@@ -34,7 +34,7 @@ class _FormPageState extends State<FormPage> {
     }
   }
 
-  Future upload(String? jjj) async {
+  Future upload(String? jjj) async {// Function to upload image to app
     if (images == null) return;
     String? kkk = await base64Encode(images!.readAsBytesSync());
     String imageName = images!.path.split("/").last;
@@ -42,20 +42,20 @@ class _FormPageState extends State<FormPage> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {// Here starts the screen
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.fromLTRB(10, 50, 10, 10),
         child: Column(
           children: [
-            CustomText(
+            CustomText(// First child of the column
               text: 'Patient Form :',
               fontSize: 30,
             ),
             const SizedBox(
               height: 50,
             ),
-            Column(
+            Column(// Second child of the column
               children: [
                 CustomText(
                   text: 'Name',
@@ -106,7 +106,7 @@ class _FormPageState extends State<FormPage> {
                   text: 'Ear Picture',
                   fontSize: 20,
                 ),
-                CircleAvatar(
+                CircleAvatar(// Camera button
                   child: images != null
                       ? Image.file(images!)
                       : IconButton(
@@ -128,7 +128,7 @@ class _FormPageState extends State<FormPage> {
             const SizedBox(
               height: 40,
             ),
-            GetBuilder<PatientsViewModel>(
+            GetBuilder<PatientsViewModel>(// Save button
                 init: PatientsViewModel(),
                 builder: (controller) => CustomButton(
                     onPressed: () async {

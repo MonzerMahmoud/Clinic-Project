@@ -10,32 +10,32 @@ class PatientsStatusPage extends StatelessWidget {
   const PatientsStatusPage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {// Here starts the screen
     return Scaffold(
       
-      body: Padding(
+      body: Padding(// Body of the screen
         padding: const EdgeInsets.all(8.0),
-        child: Column(
+        child: Column(// Put information's in a column
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           
           children: [
-            Row(
+            Row(//First child of the column
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomText(text: 'ENT CLINIC',fontSize: 50,color: primaryColor,),
+                CustomText(text: 'ENT CLINIC',fontSize: 50,color: primaryColor,),// Text of the screen
               ],
             ),
             
-            Column(
+            Column(// Second child of the column
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                CustomButton(
+                CustomButton(// New patient button to go to the form
                     onPressed: ()=>Get.to(()=>FormPage()),
                     text: 'New Patient'),
                 SizedBox(
                   height: 20,
                 ),
-                CustomButton(onPressed: ()=>Get.to(()=>OldPatientsScreen()), text: 'Old Patient'),
+                CustomButton(onPressed: ()=>Get.to(()=>OldPatientsScreen()), text: 'Old Patient'),//old patient button to go to the old patients screen
               ],
             ),
             SizedBox(height: 1,)
