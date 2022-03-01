@@ -30,7 +30,6 @@ CREATE TABLE $tablePatients (
 
 ''');
     });
-    
   }
 
   Future<List<PatientsModel>> getAllPatients() async {

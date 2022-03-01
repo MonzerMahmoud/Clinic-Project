@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:typed_data';
+
 import 'package:clinic_project/constants.dart';
 import 'package:clinic_project/view/widgets/custom_text.dart';
 import 'package:clinic_project/view_model/patients_view_model.dart';
@@ -5,7 +8,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 
 class OldPatientsScreen extends StatelessWidget {
- 
+
+  Image imageFromBase64String(String base64String) {
+  return Image.memory(base64Decode(base64String));
+}
   @override
   Widget build(BuildContext context) {
     return
@@ -42,6 +48,7 @@ class OldPatientsScreen extends StatelessWidget {
                               SizedBox(height: 10,),
                               CustomText(text: controller.patientsModel[index].age,fontSize: 20,color: Colors.white),
                               SizedBox(height: 10,),
+                              
                               CustomText(text: controller.patientsModel[index].image,fontSize: 20,color: Colors.white),
                               SizedBox(height: 10,),
                               
