@@ -22,7 +22,7 @@ class PatientsStatusPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomText(text: 'CLINIC APP',fontSize: 50,color: primaryColor,),
+                CustomText(text: 'ENT CLINIC',fontSize: 50,color: primaryColor,),
               ],
             ),
             
