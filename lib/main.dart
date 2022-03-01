@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  GetMaterialApp(
-      theme:ThemeData(primarySwatch: primaryColor),
+      theme:ThemeData(primarySwatch: Colors.teal),
       home : Scaffold(
         body: SplashScreen(),
       )

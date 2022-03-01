@@ -26,11 +26,8 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Container(
       color: primaryColor,
-      child: const Center(
-          child: Text(
-        'CLINIC APP',
-        style: TextStyle(color: Colors.white, fontSize: 50),
-      )),
+      child:  Center(
+          child: Image.asset('images/IMG_6182 2.JPG')),
     );
   }
 }

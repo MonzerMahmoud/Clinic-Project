@@ -6,4 +6,4 @@ const String columnAge = 'age';
 const String columnImage = 'image';
 const String columnId = 'id';
 
-const primaryColor = Colors.teal;
+const primaryColor = Color.fromRGBO(69, 189, 177, 1);
